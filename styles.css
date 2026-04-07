@@ -3,3 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bbc_letter {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.bbc_letter p {
+    font-size: 1.6em;
+    font-family: Montserrat SemiBold;
+    color: white;
+}
