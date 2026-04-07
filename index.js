@@ -1,7 +1,22 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const closeModalBtnInner = document.getElementById('closeModalBtnInner'); 
+const modalOverlay = document.getElementById('modalOverlay');
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+function openModal() {
+    modalOverlay.classList.add('active');
+}
+
+function closeModal() {
+    modalOverlay.classList.remove('active');
+}
+
+if (openModalBtn) openModalBtn.addEventListener('click', openModal);
+if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+if (closeModalBtnInner) closeModalBtnInner.addEventListener('click', closeModal);
+
+modalOverlay.addEventListener('click', function(event) {
+    if (event.target === modalOverlay) {
+        closeModal();
+    }
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Практика позиционирования</title>
@@ -7,11 +7,25 @@
 </head>
 <body>
 
-    <div class="logo1">
-        <div class ="square red"></div>
-        <div class ="square green"></div>
-        <div class ="square blue"></div>
-        <div class ="square yellow"></div>
+    <div class="logo-wrapper">
+        <div class="logo1">
+            <div class="square red"></div>
+            <div class="square green"></div>
+            <div class="square blue"></div>
+            <div class="square yellow"></div>
+        </div>
+    </div>
+
+    <button id="openModalBtn" class="btn-open">Открыть модальное окно</button>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="close-btn">&times;</button>
+
+            <h2>Какой-то текст</h2>
+
+            <button id="closeModalBtnInner" class="btn-close-inner">Close</button>
+        </div>
     </div>
 
     <script src="index.js"></script>
